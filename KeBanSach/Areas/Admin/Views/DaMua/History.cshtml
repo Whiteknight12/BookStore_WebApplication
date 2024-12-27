@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SellCanvas>
+
+<form method="post" class="d-flex align-items-center p-2 shadow rounded bg-light" onsubmit="return validateDates()">
+    <input type="date" id="startDate" name="startDate" class="form-control me-2" placeholder="Từ ngày" aria-label="Từ ngày">
+    <input type="date" id="endDate" name="endDate" class="form-control me-2" placeholder="Đến ngày" aria-label="Đến ngày">
+    <input type="number" id="SearchSanPhamID" name="SearchSanPhamID" class="form-control me-2" placeholder="ID sản phẩm" aria-label="ID sản phẩm">
+    <input id="SearchUserID" name="SearchUserID" class="form-control me-2" placeholder="UserName người dùng" aria-label="UserName người dùng">
+    <button type="submit" class="btn btn-primary btn-dark">
+        <i class="bi bi-search"></i>
+    </button>
+</form>
+<div class="container mt-4">
+    <h1 class="text-center fw-bold">Lịch sử bán hàng</h1>
+    <p class="text-muted text-center">Dưới đây là danh sách lịch sử bán hàng của bạn</p>
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered table-striped table-hover" style="background-color: antiquewhite">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>ID Sản Phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Tài khoản mua</th>
+                    <th>Tên người mua</th>
+                    <th>Số Lượng Bán</th>
+                    <th>Thời Gian Bán</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="8" class="text-center text-muted">Không có lịch sử bán hàng nào.</td>
+                    </tr>
+                }
+                else
+                {
+                    int index = 1;
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@index</td>
+                            <td>@item.spid</td>
+                            <td>@item.sanphamname</td>
+                            <td>@item.username</td>
+                            <td>@item.fullname</td>
+                            <td>@item.Number</td>
+                            <td>@item.Time</td>
+                        </tr>
+                        index++;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function validateDates() {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+        if ((startDate && !endDate) || (!startDate && endDate)) {
+            alert('Vui lòng chọn cả ngày bắt đầu và ngày kết thúc.');
+            return false;
+        }
+        if (startDate && endDate && startDate > endDate) {
+            alert('Ngày bắt đầu phải bé hơn hoặc bằng ngày kết thúc.');
+            return false;
+        }
+        const searchSanPhamID = document.getElementById('SearchSanPhamID');
+        if (!searchSanPhamID.value) {
+            searchSanPhamID.value = -1;
+        }
+        return true;
+    }
+</script>

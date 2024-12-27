@@ -1,0 +1,62 @@
+﻿@model SanPham
+
+<div class="container mt-5">
+    <h1 class="text-center text-uppercase fw-bold mb-4 text-danger">Xóa Sản Phẩm</h1>
+    <form class="col-lg-8 mx-auto shadow-lg p-4 rounded bg-light" method="post">
+        <div class="text-center mb-4">
+            <h2 class="text-warning fw-bold">XÁC NHẬN XÓA</h2>
+            <hr class="w-50 mx-auto" />
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <input asp-for="SanPhamId" hidden />
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label fw-bold">Tên Sản Phẩm</label>
+                    <input asp-for="Name" disabled class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Author" class="form-label fw-bold">Tác Giả</label>
+                    <input asp-for="Author" disabled class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label fw-bold">Mô Tả</label>
+                    <textarea asp-for="Description" disabled class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label fw-bold">Giá</label>
+                    <input asp-for="Price" disabled class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="DanhMucId" class="form-label fw-bold">Danh Mục</label>
+                    <select asp-for="DanhMucId" asp-items="ViewBag.ListDanhMuc" disabled class="form-select">
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Number" class="form-label fw-bold">Số Lượng</label>
+                    <input asp-for="Number" disabled class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    @if (!string.IsNullOrEmpty(Model.AnhSanPham))
+                    {
+                        <img class="img-fluid rounded" src="@Model.AnhSanPham" alt="Ảnh sản phẩm" />
+                    }
+                    else
+                    {
+                        <img class="img-fluid rounded" src="~/images/imagesnotfound.jpg" alt="Ảnh không có sẵn" />
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <button type="submit" class="btn btn-danger btn-lg w-100">
+                <i class="bi bi-trash"></i> Xóa Sản Phẩm
+            </button>
+
+            <a asp-controller="SanPham" asp-action="Index" class="btn btn-secondary btn-lg w-100">
+                <i class="bi bi-arrow-left-circle"></i> Quay Lại
+            </a>
+        </div>
+    </form>
+</div>

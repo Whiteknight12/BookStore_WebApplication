@@ -1,0 +1,21 @@
+﻿@model DanhGia
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h3 class="card-title text-center mb-4">Chỉnh sửa bình luận</h3>
+        <form method="post">
+            <input asp-for="@Model.DanhGiaId" hidden />
+            <input asp-for="@Model.SanPhamId" hidden />
+            <input asp-for="@Model.UserId" hidden />
+            <input name="SanPhamId" value="@ViewBag.SanPhamId" hidden />
+            <div class="form-group mb-3">
+                <label asp-for="NoiDung" class="form-label">Nội dung</label>
+                <textarea asp-for="NoiDung" class="form-control" rows="4" placeholder="Nhập nội dung chỉnh sửa..."></textarea>
+            </div>
+            <div class="d-flex justify-content-end gap-2">
+                <button type="submit" class="btn btn-success px-4">Lưu thay đổi</button>
+                <a asp-controller="Home" asp-action="Detail" asp-route-sanphamid="@Model.SanPhamId" class="btn btn-secondary px-4">Hủy bỏ</a>
+            </div>
+        </form>
+    </div>
+</div>

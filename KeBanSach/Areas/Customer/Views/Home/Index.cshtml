@@ -1,0 +1,103 @@
+﻿@model List<SanPham>
+
+<div class="w-100 d-flex justify-content-end mt-3">
+    <form method="post" class="row w-75 d-flex justify-content-end align-items-center">
+        <input name="searchString"
+               type="search"
+               placeholder="Tìm kiếm tên sách..."
+               class="form-control col col-10 w-50 me-2" />
+        <button type="submit"
+                class="btn btn-primary btn-dark rounded col col-1 d-flex justify-content-center align-items-center">
+            <i class="bi bi-search"></i>
+        </button>
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="btn btn-secondary col col-1 ms-2">
+            Clear
+        </a>
+    </form>
+</div>
+@if (TempData["searchsuccess"] != null)
+{
+    <p class="text-center fs-4 mt-3">@TempData["searchsuccess"]</p>
+}
+<div class="mt-5">
+    <p class="fw-bold fs-2 custom-bar text-dark">SẢN PHẨM CỦA CỬA HÀNG</p>
+</div>
+<div class="row pb-4 mt-4">
+    @if (Model.Count() > 0)
+    {
+        var productList = Model.Count() <= 8 ? Model : Model.OrderBy(x => Guid.NewGuid()).Take(8).ToList();
+        foreach (var obj in productList)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-img-top position-relative">
+                        @if (!string.IsNullOrEmpty(@obj.AnhSanPham))
+                        {
+                            <img src="@obj.AnhSanPham" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="@obj.Name" />
+                        }
+                        else
+                        {
+                            <img src="./images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="Không có hình ảnh" />
+                        }
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-truncate" style="max-width: 270px;">@obj.Name</h5>
+                        <a asp-action="Detail" asp-route-sanphamid="@obj.SanPhamId" class="btn btn-primary btn-dark btn-lg mt-2"><i class="bi bi-info-circle"></i> Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-center fs-5">Không có sản phẩm nào để hiển thị.</p>
+    }
+</div>
+<div class="w-100 d-flex justify-content-center mt-2">
+    <a asp-controller="Home" asp-action="All" class="btn btn-primary btn-dark border-secondary">XEM TOÀN BỘ SẢN PHẨM</a>
+</div>
+<div class="mt-5">
+    <p class="fw-bold fs-2 custom-bar text-dark">SẢN PHẨM BÁN CHẠY NHẤT</p>
+</div>
+<form method="post" class="mt-2 w-100 d-flex justify-content-start gap-1">
+    <select name="BestSellerFilter" asp-items="@ViewBag.Filter" class="rounded">
+        <option value="AllTimes">Toàn thời gian</option>
+    </select>
+    <button type="submit" class="btn btn-primary btn-dark"><i class="bi bi-funnel-fill"></i></button>
+</form>
+<div class="row pb-4 mt-4">
+    @if (ViewBag.BestSeller.Count <= 0)
+    {
+        <p>Không có dữ liệu</p>
+    }
+    else
+    {
+        foreach (var obj in ViewBag.BestSeller)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-img-top position-relative">
+                        @if (!string.IsNullOrEmpty(@obj.Key.AnhSanPham))
+                        {
+                            <img src="@obj.Key.AnhSanPham" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="@obj.Key.Name" />
+                        }
+                        else
+                        {
+                            <img src="./images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="Không có hình ảnh" />
+                        }
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-truncate" style="max-width: 270px;">@obj.Key.Name</h5>
+                        <a asp-action="Detail" asp-route-sanphamid="@obj.Key.SanPhamId" class="btn btn-primary btn-dark btn-lg mt-2"><i class="bi bi-info-circle"></i> Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+<div class="w-100 d-flex justify-content-center mt-2">
+    <a asp-controller="Home" asp-action="All" class="btn btn-primary btn-dark border-secondary">XEM TOÀN BỘ SẢN PHẨM</a>
+</div>
+

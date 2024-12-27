@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "dgRfOCqWg/Q=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\documentformat.openxml\\3.1.1\\documentformat.openxml.3.1.1.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\documentformat.openxml.framework\\3.1.1\\documentformat.openxml.framework.3.1.1.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.11\\microsoft.aspnetcore.cryptography.internal.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.11\\microsoft.aspnetcore.cryptography.keyderivation.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.11\\microsoft.aspnetcore.identity.ui.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\8.0.11\\microsoft.extensions.fileproviders.embedded.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.11\\microsoft.extensions.identity.core.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.11\\microsoft.extensions.identity.stores.8.0.11.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\MINH QUANG\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

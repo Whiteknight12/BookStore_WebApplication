@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KeBanSach.bundle.scp.css",
+      "PackagePath": "staticwebassets\\KeBanSach.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\TrainingData.txt",
+      "PackagePath": "staticwebassets\\TrainingData.txt"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\210 Anime Landscape HD Wallpapers and Backgrounds.png",
+      "PackagePath": "staticwebassets\\images\\210 Anime Landscape HD Wallpapers and Backgrounds.png"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\2101998004.jpg",
+      "PackagePath": "staticwebassets\\images\\2101998004.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\3b0649ea75cc410eba4923a298e067c3.jpg",
+      "PackagePath": "staticwebassets\\images\\3b0649ea75cc410eba4923a298e067c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\67bde020c93511edaa2ecd380fc76996.jpeg",
+      "PackagePath": "staticwebassets\\images\\67bde020c93511edaa2ecd380fc76996.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\91ZX8zNpwZL._AC_UL600_SR600,600_.jpg",
+      "PackagePath": "staticwebassets\\images\\91ZX8zNpwZL._AC_UL600_SR600,600_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\91rHTQxyG-L.jpg",
+      "PackagePath": "staticwebassets\\images\\91rHTQxyG-L.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\9780553565072-1.jpg",
+      "PackagePath": "staticwebassets\\images\\9780553565072-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\9781685797270.jpg",
+      "PackagePath": "staticwebassets\\images\\9781685797270.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\9788868360047_0_536_0_75.jpg",
+      "PackagePath": "staticwebassets\\images\\9788868360047_0_536_0_75.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\Danb.jpg",
+      "PackagePath": "staticwebassets\\images\\Danb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\Than-thoai-hy-lap-679x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\Than-thoai-hy-lap-679x1024.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\as.jpg",
+      "PackagePath": "staticwebassets\\images\\as.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\c381n-me1baa1ng-e1bb9f-nhc3a0-me1bba5c-ve1bba5-agatha-christie.jpg",
+      "PackagePath": "staticwebassets\\images\\c381n-me1baa1ng-e1bb9f-nhc3a0-me1bba5c-ve1bba5-agatha-christie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\dune.jpg",
+      "PackagePath": "staticwebassets\\images\\dune.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\harrypotter.jpg",
+      "PackagePath": "staticwebassets\\images\\harrypotter.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\imagesnotfound.jpg",
+      "PackagePath": "staticwebassets\\images\\imagesnotfound.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\khoahocvavutru.jpg",
+      "PackagePath": "staticwebassets\\images\\khoahocvavutru.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\kiotviet_ea5824337f4b2e5c0be148478f73c7e4.jpg",
+      "PackagePath": "staticwebassets\\images\\kiotviet_ea5824337f4b2e5c0be148478f73c7e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\luocsu.jpg",
+      "PackagePath": "staticwebassets\\images\\luocsu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\mot_hai_ba_nhung_cai_chet_bi_an__agatha_christie.jpg",
+      "PackagePath": "staticwebassets\\images\\mot_hai_ba_nhung_cai_chet_bi_an__agatha_christie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\nexus-bia-1726719739-172671975-2510-2408-1726719970.jpg",
+      "PackagePath": "staticwebassets\\images\\nexus-bia-1726719739-172671975-2510-2408-1726719970.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\nguoi_dan_ong_bi_an__agatha_christie.jpg",
+      "PackagePath": "staticwebassets\\images\\nguoi_dan_ong_bi_an__agatha_christie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\noi-day-nui-dien-dai_bia_21e8697d1c994ec9b7ba5c7105034114_master.jpg",
+      "PackagePath": "staticwebassets\\images\\noi-day-nui-dien-dai_bia_21e8697d1c994ec9b7ba5c7105034114_master.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\nouser.jpg",
+      "PackagePath": "staticwebassets\\images\\nouser.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\nxbtre_full_01062022_100611.jpg",
+      "PackagePath": "staticwebassets\\images\\nxbtre_full_01062022_100611.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\tinhyeu.jpg",
+      "PackagePath": "staticwebassets\\images\\tinhyeu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\truebackground.jpg",
+      "PackagePath": "staticwebassets\\images\\truebackground.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\tumblr_ngrvn3SnsB1u1onhso1_500.jpg",
+      "PackagePath": "staticwebassets\\images\\tumblr_ngrvn3SnsB1u1onhso1_500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\tuyen-tap-truyen-kinh-di-cua-edgar-poe.jpg",
+      "PackagePath": "staticwebassets\\images\\tuyen-tap-truyen-kinh-di-cua-edgar-poe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\unnamed-file-1700.jpg",
+      "PackagePath": "staticwebassets\\images\\unnamed-file-1700.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\vn-11134207-7qukw-lk3grof6acxuc0.jpg",
+      "PackagePath": "staticwebassets\\images\\vn-11134207-7qukw-lk3grof6acxuc0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\vn-11134207-7r98o-llysiedg8rtrc8.jpg",
+      "PackagePath": "staticwebassets\\images\\vn-11134207-7r98o-llysiedg8rtrc8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\images\\z4698478077257_3a6b1b75fa0d1ec5fadacd781395122d__60309.jpg",
+      "PackagePath": "staticwebassets\\images\\z4698478077257_3a6b1b75fa0d1ec5fadacd781395122d__60309.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KeBanSach.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KeBanSach.props",
+      "PackagePath": "build\\KeBanSach.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KeBanSach.props",
+      "PackagePath": "buildMultiTargeting\\KeBanSach.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KeBanSach.props",
+      "PackagePath": "buildTransitive\\KeBanSach.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

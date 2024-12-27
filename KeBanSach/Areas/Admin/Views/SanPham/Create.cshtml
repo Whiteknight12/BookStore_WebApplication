@@ -1,0 +1,66 @@
+﻿@model SanPham
+
+<div class="container mt-5">
+    <h1 class="text-center text-uppercase fw-bold mb-4">Tạo Sản Phẩm Mới</h1>
+    <form class="col-lg-8 mx-auto shadow-lg p-4 rounded bg-light" method="post" enctype="multipart/form-data">
+        <div class="text-center mb-4">
+            <h2 class="text-primary fw-bold">Thông Tin Sản Phẩm</h2>
+            <hr class="w-50 mx-auto" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label fw-bold">Tên Sản Phẩm</label>
+            <input asp-for="Name" class="form-control" placeholder="Nhập tên sản phẩm..." />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Author" class="form-label fw-bold">Tác Giả</label>
+            <input asp-for="Author" class="form-control" placeholder="Nhập tên tác giả..." />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label fw-bold">Mô Tả</label>
+            <textarea asp-for="Description" class="form-control" placeholder="Nhập mô tả sản phẩm..."></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label fw-bold">Giá (USD)</label>
+            <input asp-for="Price" class="form-control" placeholder="Nhập giá sản phẩm..." />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DanhMucId" class="form-label fw-bold">Danh Mục</label>
+            <select multiple="multiple" id="ListDanhMuc" name="ListDanhMuc" asp-items="ViewBag.ListDanhMuc" class="form-select" placeholder="Chọn danh mục...">
+            </select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="AnhSanPham" class="form-label fw-bold">Ảnh Sản Phẩm</label>
+            <input name="file" type="file" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Number" class="form-label fw-bold">Số Lượng</label>
+            <input asp-for="Number" class="form-control" placeholder="Nhập số lượng sản phẩm..." />
+            <span asp-validation-for="Number" class="text-danger"></span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-plus-circle"></i> Tạo Sản Phẩm
+            </button>
+            <a asp-controller="SanPham" asp-action="Index" class="btn btn-secondary btn-lg">
+                <i class="bi bi-arrow-left-circle"></i> Quay Lại
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $('#ListDanhMuc').select2({
+                placeholder: "Chọn danh mục...",
+                allowClear: true
+            });
+        });
+    </script>
+}

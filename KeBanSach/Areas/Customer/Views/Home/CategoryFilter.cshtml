@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SanPham>
+
+<div class="container my-4">
+    <h1 class="text-center text-primary mb-5 text-black">
+        Danh sách sản phẩm: <span class="fw-bold">@ViewBag.danhmuc.Name</span>
+    </h1>
+
+    @if (!Model.Any())
+
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            Không có sản phẩm nào trong danh mục này.
+        </div>
+    }
+
+    else
+
+    {
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            @foreach (var sanpham in Model)
+
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-img-top position-relative">
+                            @if (!string.IsNullOrEmpty(sanpham.AnhSanPham))
+                            {
+                                <img src="@sanpham.AnhSanPham" class="w-100 rounded-top" style="height: 300px; object-fit: cover;" alt="@sanpham.Name" />
+                            }
+                            else
+                            {
+                                <img src="./images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 300px; object-fit: cover;" alt="Không có hình ảnh" />
+                            }
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-truncate fw-bold" style="max-width: 200px;">@sanpham.Name</h5>
+                            <p class="text-muted">@sanpham.Price.ToString("C0")</p> 
+                            <a asp-action="Detail" asp-route-sanphamid="@sanpham.SanPhamId" class="btn btn-primary btn-dark mt-2">
+                                <i class="bi bi-info-circle"></i> Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

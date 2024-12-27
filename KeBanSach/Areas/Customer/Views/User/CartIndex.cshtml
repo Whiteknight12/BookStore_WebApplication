@@ -1,0 +1,73 @@
+﻿@model List<CartVM>
+<h1 class="text-center my-4 text-uppercase fw-bold">Giỏ Hàng Của Bạn</h1>
+@if (Model.Count == 0)
+{
+    <p class="text-center fs-4 text-muted">Không có sản phẩm nào trong giỏ hàng.</p>
+}
+else
+{
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var obj in Model)
+            {
+                if (obj.sanpham!=null)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top">
+                                @if (!string.IsNullOrEmpty(obj.sanpham.AnhSanPham))
+                                {
+                                    <img src="@obj.sanpham.AnhSanPham"
+                                         alt="Ảnh sản phẩm"
+                                         class="w-100 rounded-top"
+                                         style="height: 300px; object-fit: cover" />
+                                }
+                                else
+                                {
+                                    <img src="./images/imagesnotfound.jpg"
+                                         alt="Ảnh sản phẩm"
+                                         class="w-100 rounded-top"
+                                         style="height: 300px; object-fit: cover" />
+                                }
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-primary">@obj.sanpham.Name</h5>
+                                <p class="card-text text-muted">Số lượng mua: <span class="fw-bold">@obj.Number</span></p>
+                                <p class="card-text text-success">Tổng giá: <span class="fw-bold">@(string.Format("{0:F2}", obj.Number * obj.sanpham.Price)) USD</span></p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-action="Detail" asp-controller="Home" asp-route-sanphamid="@obj.sanpham.SanPhamId"
+                                       class="btn btn-outline-primary btn-sm">Chi Tiết</a>
+                                    <a asp-action="Remove" asp-controller="User" asp-route-sanphamid="@obj.sanpham.SanPhamId"
+                                       class="btn btn-outline-danger btn-sm">Bỏ Chọn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <p>Sản phẩm không còn tồn tại trong cửa hàng</p>
+                }
+            }
+        </div>
+        @{
+            float? sum = 0;
+            foreach (var obj in Model) sum += obj.sanpham.Price * obj.Number;
+        }
+        <div class="text-center fs-4 fw-bold mt-5" style="background-color: aliceblue">
+            Tổng Thành Tiền: <span class="text-success">@(string.Format("{0:F2}", sum)) USD</span>
+        </div>
+        @if (ViewBag.Confirm == false)
+        {
+        <div class="mt-4">
+            <p class="text-center fs-5 text-danger" style="background-color: bisque">Tình trạng: Chưa xác nhận mua</p>
+            <div class="d-flex justify-content-center">
+                <a asp-area="Customer" asp-controller="User" asp-action="Received"
+                   class="btn btn-dark px-4 py-2">
+                    Xác Nhận Mua
+                </a>
+            </div>
+        </div>
+        }
+    </div>
+}

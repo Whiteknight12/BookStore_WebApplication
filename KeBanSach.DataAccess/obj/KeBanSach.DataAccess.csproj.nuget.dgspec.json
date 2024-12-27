@@ -1,0 +1,272 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.DataAccess\\KeBanSach.DataAccess.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.DataAccess\\KeBanSach.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.DataAccess\\KeBanSach.DataAccess.csproj",
+        "projectName": "KeBanSach.DataAccess",
+        "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.DataAccess\\KeBanSach.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\MINH QUANG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MINH QUANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\KeBanSach.Models.csproj": {
+                "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\KeBanSach.Models.csproj"
+              },
+              "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj": {
+                "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\KeBanSach.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\KeBanSach.Models.csproj",
+        "projectName": "KeBanSach.Models",
+        "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\KeBanSach.Models.csproj",
+        "packagesPath": "C:\\Users\\MINH QUANG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MINH QUANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj": {
+                "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj",
+        "projectName": "KeBanSach.Utility",
+        "projectPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\KeBanSach.Utility.csproj",
+        "packagesPath": "C:\\Users\\MINH QUANG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MINH QUANG\\source\\repos\\KeBanSach\\KeBanSachWeb\\KeBanSach.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MINH QUANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

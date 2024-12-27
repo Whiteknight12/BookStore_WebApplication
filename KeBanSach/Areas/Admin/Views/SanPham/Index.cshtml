@@ -1,0 +1,156 @@
+﻿@using KeBanSach.DataAccess.Data.Repository.IRepository
+@model List<SanPham>
+@inject ISellCanvas _sellcanvas
+
+<div class="container mt-5">
+    <h1 class="text-center text-uppercase fw-bold mb-4">Danh Sách Sản Phẩm</h1>
+    @{
+        var sum = 0;
+        foreach (var sanpham in Model) sum += sanpham.Number;
+    }
+    <h2 class="text-center text-success fw-bold mb-4">Tổng Số Sản Phẩm: @sum</h2>
+    <div class="container mt-4">
+        <form method="post" class="row justify-content-center align-items-center g-3">
+            <!-- Ô nhập tìm kiếm -->
+            <div class="col-lg-6">
+                <input name="searchString" type="search" placeholder="Nhập tên sách cần tìm..."
+                       class="form-control form-control-lg rounded-pill shadow-sm"
+                       aria-label="Tìm kiếm sách" />
+            </div>
+            <div class="col-lg-3">
+                <select name="SearchCategory" asp-items="@ViewBag.DanhMuc"
+                        class="form-select form-select-lg rounded-pill shadow-sm"
+                        style="background-color: #f5deb3;">
+                    <option value="NoFilter">Lọc sách theo danh mục</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary btn-lg rounded-circle shadow-sm">
+                    <i class="bi bi-search"></i>
+                </button>
+                <a asp-controller="SanPham" asp-action="Index"
+                   class="btn btn-secondary btn-lg rounded-pill shadow-sm ms-2">
+                    Bỏ tìm kiếm
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="row d-flex w-100 justify-content-between mt-5">
+        <div class="dropdown mb-4 col col-auto h-75">
+            <button class="btn btn-secondary dropdown-toggle h-75 text-dark" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: burlywood">
+                Lựa chọn nhập/xuất
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: cadetblue">
+                <li>
+                    <a asp-area="Admin" asp-controller="SanPham" asp-action="ImportExcel" class="dropdown-item btn btn-outline-primary btn-lg text-dark fw-bold" style="background-color: bisque">
+                        <i class="bi bi-upload"></i> Nhập File Excel
+                    </a>
+                </li>
+                <li>
+                    @{
+                        string ids="";
+                        foreach (var item in Model)
+                        {
+                            ids = ids + item.SanPhamId + ",";
+                        }
+                    }
+                    <a asp-area="Admin" asp-controller="SanPham" asp-action="Export" asp-route-SanPhamId="@ids" class="dropdown-item btn btn-outline-success btn-lg text-dark fw-bold" style="background-color: coral">
+                        <i class="bi bi-download"></i> Xuất File Excel
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="w-100 d-flex justify-content-between">
+            <a asp-controller="SanPham" asp-action="Status" class="btn btn-info btn-lg">
+                <i class="bi bi-chat-square-dots"></i> Tình Trạng Mua Bán
+            </a>
+            <a asp-controller="SanPham" asp-action="Create" class="btn btn-success btn-lg">
+                <i class="bi bi-plus-circle"></i> Thêm Sản Phẩm Mới
+            </a>
+        </div>
+    </div>
+    <form method="post">
+        <table class="table table-hover table-bordered text-center align-middle shadow-lg" style="background-color: aliceblue">
+            <thead class="table-dark">
+                <tr>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Tác Giả</th>
+                    <th>Mô Tả</th>
+                    <th>Giá (USD)</th>
+                    <th>Danh Mục</th>
+                    <th>Số Lượng Đang Bán</th>
+                    <th>Số Lượng Đã Bán</th>
+                    <th>Chỉnh Sửa</th>
+                    <th>
+                        <button id="SelectAll" type="button" class="btn-primary btn-danger">Chọn nhiều</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td>@obj.Name</td>
+                        <td>@obj.Author</td>
+                        <td>@(obj.Description.Length > 200 ? obj.Description.Substring(0, 150) + "..." : obj.Description)</td>
+                        <td>@obj.Price</td>
+                        <td>
+                            @{
+                                string s = "";
+                                foreach (var danhmuc in obj.ListDanhMuc)
+                                {
+                                    s += danhmuc.Name + "/";
+                                }
+                            }
+                            @s.TrimEnd('/')
+                        </td>
+                        <td>@obj.Number</td>
+                        <td>
+                            @{
+                                var sold = 0;
+                                var list = _sellcanvas.GetList(u => u.spid == obj.SanPhamId);
+                                foreach (var item in list) sold += item.Number;
+                            }
+                            @sold
+                        </td>
+                        <td>
+                            <a asp-controller="SanPham" asp-action="Edit" asp-route-id="@obj.SanPhamId" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <a asp-controller="SanPham" asp-action="Delete" asp-route-id="@obj.SanPhamId" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="DeleteSanPhamId" value="@obj.SanPhamId" class="form-check-input checkbox-item" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="text-end mt-3">
+            <button type="submit" class="btn btn-danger btn-lg" style="width: 92px">
+                <i class="bi bi-trash2"></i> Xóa Nhiều
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const selectAllButton = document.getElementById("SelectAll");
+        const checkboxes = document.querySelectorAll(".checkbox-item");
+        let allChecked = false;
+
+        selectAllButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = !allChecked;
+            });
+            allChecked = !allChecked;
+        });
+    });
+</script>

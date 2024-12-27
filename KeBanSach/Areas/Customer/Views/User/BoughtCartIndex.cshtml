@@ -1,0 +1,88 @@
+﻿@model List<BoughtCartVM>
+<div class="container mt-5">
+    <h1 class="text-center text-uppercase fw-bold mb-4">Đơn hàng của bạn</h1>
+    @if (Model.Count == 0)
+    {
+        <div class="text-center" role="alert">
+            Không có đơn hàng nào đang chờ giao.
+        </div>
+    }
+    else
+    {
+        int i = 1;
+        @foreach (var boughtcart in Model)
+        {
+            <div class="card my-4 shadow-lg">
+                <div class="card-header bg-dark text-white text-center">
+                    <h2 class="fs-4">Đơn hàng @(i++)</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        @{
+                            float? sum = 0;
+                            string CartId = "";
+                        }
+                        @foreach (var obj in boughtcart.items)
+                        {
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="card border-0 shadow-sm h-100">
+                                    @if (!string.IsNullOrEmpty(obj.Key.AnhSanPham))
+                                    {
+                                        <img src="@obj.Key.AnhSanPham" class="card-img-top rounded" alt="Ảnh sản phẩm" style="object-fit:cover; height: 400px" />
+                                    }
+                                    else
+                                    {
+                                        <img src="./images/imagesnotfound.jpg" alt="Ảnh sản phẩm" style="object-fit:cover; height: 400px" />
+                                    }
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-truncate">@obj.Key.Name</h5>
+                                        <p class="card-text">Số lượng: <span class="fw-bold">@obj.Value</span></p>
+                                        <p class="card-text text-success">Tổng giá: <span class="fw-bold">@string.Format("{0:F2}", obj.Value * obj.Key.Price) USD</span></p>
+                                        <a asp-action="Detail" asp-controller="Home" asp-route-sanphamid="@obj.Key.SanPhamId" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            sum += obj.Key.Price * obj.Value;
+                            CartId = CartId + obj.Key.SanPhamId + ",";
+                        }
+                    </div>
+                </div>
+                <div class="card-footer text-center bg-light">
+                    <p class="fs-5 fw-bold">Tổng thành tiền: <span class="text-danger">@string.Format("{0:F2}", sum) USD</span></p>
+                    @if (boughtcart.Delivered == KeBanSach.Utility.ExtensiveVariables.TinhTrangDonHang.chogiao)
+                    {
+                        <p class="text-warning">Tình trạng: Chờ giao hàng</p>
+                    }
+                    else if (boughtcart.Delivered==KeBanSach.Utility.ExtensiveVariables.TinhTrangDonHang.bihuy)
+                    {
+                        string username = User.Identity.Name;
+                        string SanPhamId = CartId.TrimEnd(',');
+                        <p class="text-success">Tình trạng: Đơn hàng bị hủy</p>
+                        if (User.IsInRole("Admin"))
+                        {
+                            <a asp-area="Customer" asp-controller="User" asp-action="AdminDaNhanHang" asp-route-username="@username" asp-route-CartId="@SanPhamId" class="btn btn-danger btn-sm mt-2">Xóa đơn hàng</a>
+                        }
+                        else
+                        {
+                            <a asp-area="Customer" asp-controller="User" asp-action="DaNhanHang" asp-route-username="@username" asp-route-CartId="@SanPhamId" class="btn btn-danger btn-sm mt-2">Xóa đơn hàng</a>
+                        }
+                    }
+                    else
+                    {
+                        string username = User.Identity.Name;
+                        string SanPhamId = CartId.TrimEnd(',');
+                        <p class="text-success">Tình trạng: Đã nhận hàng</p>
+                        if (User.IsInRole("Admin"))
+                        {
+                            <a asp-area="Customer" asp-controller="User" asp-action="AdminDaNhanHang" asp-route-username="@username" asp-route-CartId="@SanPhamId" class="btn btn-danger btn-sm mt-2">Xóa đơn hàng</a>
+                        }
+                        else
+                        {
+                            <a asp-area="Customer" asp-controller="User" asp-action="DaNhanHang" asp-route-username="@username" asp-route-CartId="@SanPhamId" class="btn btn-danger btn-sm mt-2">Xóa đơn hàng</a>
+                        }
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

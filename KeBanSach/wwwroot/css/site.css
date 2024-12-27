@@ -1,0 +1,207 @@
+﻿.custom-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.custom-bar {
+    background-color: darkgray;
+}
+
+.anhsanpham {
+    width: 290px;
+    height: 380px;
+    max-width: 290px;
+    max-height: 380px;
+}
+
+.comments-section {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-comments {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+.comment {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+    .comment-content .username {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #343a40;
+    }
+
+    .comment-content .comment-text {
+        font-size: 1rem;
+        color: #495057;
+        line-height: 1.5;
+        white-space: pre-wrap; 
+    }
+
+.review-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .review-section h4 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+.review-form .rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+    .review-form .rating label {
+        position: relative;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #ccc;
+        transition: color 0.3s ease;
+    }
+
+    .review-form .rating input[type="radio"] {
+        display: none;
+    }
+
+        .review-form .rating input[type="radio"]:checked ~ .star,
+        .review-form .rating label:hover ~ .star,
+        .review-form .rating label:hover .star {
+            color: #ffc107;
+        }
+
+.review-form textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.review-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .review-form button:hover {
+        background-color: #0056b3;
+    }
+
+.avatar-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border: 4px solid #fff; 
+    overflow: hidden;
+    position: relative; 
+}
+
+    .avatar-image img {
+        height: 100%;
+        width: 100%; 
+        object-fit: cover;
+        object-position: center; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .avatar-image img:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+header, nav {
+    margin: 0;
+    padding: 0;
+}
+
+img.w-100.h-100 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}

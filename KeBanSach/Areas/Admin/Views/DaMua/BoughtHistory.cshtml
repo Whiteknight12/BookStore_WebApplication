@@ -1,0 +1,71 @@
+﻿@using KeBanSach.DataAccess.Data.Repository.IRepository
+@model List<SellCanvas>
+@inject ISanPham _sanpham
+
+<h1 class="text-center my-4 text-uppercase fw-bold text-primary">Lịch Sử Mua Hàng Của Bạn</h1>
+
+<div class="container">
+    @if (!Model.Any())
+
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            Bạn chưa có giao dịch mua hàng nào!
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                var sanpham = _sanpham.Get(u => u.SanPhamId == item.spid);
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-img-top">
+                            @if (sanpham == null)
+                            {
+                                <img src="/images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 200px; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                @if (!string.IsNullOrEmpty(sanpham.AnhSanPham))
+                                {
+                                    <img src="@sanpham.AnhSanPham" class="w-100 rounded-top" style="height: 200px; object-fit: cover;" />
+                                }
+                                else
+                                {
+                                    <img src="./images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 200px; object-fit: cover;" />
+                                }
+                            }
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            @if (sanpham == null)
+                            {
+                                <h5 class="card-title text-danger">Sản phẩm đã bị xóa khỏi cửa hàng</h5>
+                            }
+                            else
+                            {
+                                <h5 class="card-title fw-bold text-primary">@sanpham.Name</h5>
+                                <p class="card-text text-muted mb-1">
+                                    <i class="bi bi-bag-check-fill"></i> Số lượng mua: <span class="fw-bold">@item.Number</span>
+                                </p>
+                                <p class="card-text text-success">
+                                    <i class="bi bi-currency-dollar"></i> Tổng giá: <span class="fw-bold">@(string.Format("{0:F2}", item.Number * sanpham.Price)) USD</span>
+                                </p>
+                            }
+                            <div class="mt-auto">
+                                @if (sanpham != null)
+
+                                {
+                                    <a asp-area="Customer" asp-action="Detail" asp-controller="Home" asp-route-sanphamid="@sanpham.SanPhamId"
+                                       class="btn btn-outline-primary btn-sm">
+                                        Xem Chi Tiết
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

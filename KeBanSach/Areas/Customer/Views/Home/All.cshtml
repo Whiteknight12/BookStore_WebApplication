@@ -1,0 +1,71 @@
+﻿@model List<SanPham>
+
+<div class="container py-5">
+    <h1 class="fw-bold text-center mb-5 display-4">TẤT CẢ SẢN PHẨM</h1>
+    <div class="d-flex justify-content-end mb-4">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-secondary btn-lg">
+            <i class="bi bi-house"></i> Quay Lại Trang Chính
+        </a>
+    </div>
+    <div class="row gy-4">
+        @foreach (var obj in Model)
+
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <!-- Hình ảnh sản phẩm -->
+                    <div class="card-img-top position-relative">
+                        @if (!string.IsNullOrEmpty(@obj.AnhSanPham))
+
+                        {
+                            <img src="@obj.AnhSanPham" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="@obj.Name" />
+                        }
+
+                        else
+
+                        {
+                            <img src="~/images/imagesnotfound.jpg" class="w-100 rounded-top" style="height: 400px; object-fit: cover;" alt="Không có hình ảnh" />
+                        }
+                    </div>
+                    <div class="card-body text-center">
+                        @if (obj.Name.Length < 19)
+
+                        {
+                            <h5 class="card-title text-truncate">@obj.Name</h5>
+                        }
+
+                        else
+
+                        {
+                            string tmp = obj.Name.Substring(0, 15) + "...";
+                            <h5 class="card-title text-truncate">@tmp</h5>
+                        }
+                        <a asp-action="Detail" asp-route-sanphamid="@obj.SanPhamId" class="btn btn-primary btn-dark btn-lg mt-2">
+                            <i class="bi bi-info-circle"></i> Chi Tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <button class="btn btn-primary btn-lg btn-dark" id="back-to-top" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000">
+        <i class="bi bi-arrow-up"></i> 
+    </button>
+</div>
+
+<script>
+    window.addEventListener("scroll", function() {
+        const button = document.getElementById("back-to-top");
+        if (window.scrollY > 300) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    });
+    document.getElementById("back-to-top").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>

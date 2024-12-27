@@ -1,0 +1,123 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model SanPham
+
+<div class="container py-5">
+    <h1 class="text-center mb-5 display-4 fw-bold">CHI TIẾT SẢN PHẨM</h1>
+    <div class="row align-items-center">
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+            @if (!string.IsNullOrEmpty(Model.AnhSanPham))
+            {
+                <img src="@Model.AnhSanPham" class="img-fluid rounded shadow-sm" alt="@Model.Name" style="max-height: 450px; object-fit: contain;" />
+            }
+            else
+            {
+                <img src="~/images/imagesnotfound.jpg" class="img-fluid rounded shadow-sm" alt="Hình ảnh không có" style="max-height: 450px; object-fit: contain;" />
+            }
+        </div>
+        <div class="col-lg-6">
+            <h2 class="text-primary text-dark bg-white">@Model.Name</h2>
+            <p class="text-white fs-5 mb-4 bg-dark">@Model.Author</p>
+
+            <div class="mb-3">
+                <p class="fw-bold fs-5 mb-1">Giá Sản Phẩm:</p>
+                <span class="text-danger fw-bold fs-4 fw-semibold">@Model.Price USD</span>
+            </div>
+
+            <div class="mb-3">
+                <p class="fw-bold fs-5 mb-1">Danh Mục:</p>
+                @foreach (var danhmuc in Model.ListDanhMuc)
+                {
+                    <a asp-controller="Home" asp-action="CategoryFilter" asp-route-DanhMucId="@danhmuc.DanhMucId" class="btn btn-primary fs-6">@danhmuc.Name</a>
+                }
+            </div> 
+
+            <div class="mb-3">
+                <p class="fw-bold fs-5 mb-1">Mô Tả:</p>
+                    <textarea class="form-control" readonly style="height: 130px;">@Model.Description</textarea>
+            </div>
+
+            <div class="mb-3">
+                <p class="fw-bold fs-5 mb-1">Số Lượng Đang Bán:</p>
+                <span class="text-dark fw-bold fs-5">@Model.Number</span>
+            </div>
+            <div class="mb-3">
+                <p class="fw-bold fs-5 mb-1">Số Lượng Đã Bán:</p>
+                <span class="text-dark fw-bold fs-5">@ViewBag.amount</span>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        @if (Model.Number>0)
+        {
+            <a asp-area="Customer" asp-controller="User" asp-action="AddCart" asp-route-id="@Model.SanPhamId" class="btn btn-success btn-lg me-3 px-4">
+                <i class="bi bi-cart-plus"></i> Thêm Vào Giỏ Hàng
+            </a>
+        }
+        else
+        {
+            <a class="btn btn-success btn-lg me-3 px-4">
+                <i class="bi bi-cart-plus"></i> Hết Hàng 
+            </a>
+        }
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary btn-lg px-4">
+            <i class="bi bi-house"></i> Quay Lại Trang Chính
+        </a>
+    </div>
+</div>
+
+@{
+    var Comments = (List<(CustomedUser Key, DanhGia Value)>)ViewBag.Comments;
+}
+<h2 class="fw-bolder">BÌNH LUẬN</h2>
+@if (Comments == null || Comments.Count == 0)
+{
+    <div class="no-comments">
+        <p class="text-muted">Chưa có đánh giá nào. Hãy là người đầu tiên đánh giá sản phẩm này!</p>
+    </div>
+}
+else
+{
+    <div class="comments-section">
+        @foreach (var comment in Comments)
+        {
+            <div class="comment d-flex align-items-start gap-3 mb-4">
+                <div class="avatar-container">
+                    <img src="@(!string.IsNullOrEmpty(comment.Key.UserImgUrl) ? comment.Key.UserImgUrl : Url.Content("~/images/nouser.jpg"))"
+                         alt="User Avatar" style="height:50px; width: 50px; border-radius: 50%">
+                </div>
+                <div class="comment-content">
+                    <h5 class="username">@comment.Key.Name</h5>
+                        <p class="comment-text">@comment.Value.NoiDung</p>
+                    @if (ViewBag.UserId == comment.Key.Id)
+                    {
+                        <div class="row d-flex gap-2 justify-content-start">
+                            <a asp-route-SanPhamId="@Model.SanPhamId" asp-route-DanhGiaId="@comment.Value.DanhGiaId" asp-controller="User" asp-action="DeleteComment" class="btn btn-primary text-dark col col-auto" style="background-color: aqua">Xóa</a>
+                            <a asp-route-SanPhamId="@Model.SanPhamId" asp-route-DanhGiaId="@comment.Value.DanhGiaId" asp-controller="User" asp-action="EditComment" class="btn btn-primary text-dark col col-auto" style="background-color: aqua">Sửa</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (ViewBag.HaveBought == true)
+{
+    <div class="review-section">
+        <h4>Đánh giá sản phẩm</h4>
+        <form method="post" class="review-form">
+            <div class="d-flex align-items-start gap-3">
+                <div class="avatar-container">
+                    <img src="@(!string.IsNullOrEmpty(ViewBag.UserAvatar) ? ViewBag.UserAvatar : Url.Content("~/images/nouser.jpg"))"
+                         alt="User Avatar" style="height:100px; width: 100px; border-radius: 50%">
+                </div>
+                <div class="review-content w-100">
+                    <input name="SanPhamId" value="@Model.SanPhamId" hidden />
+                    <input name="UserId" value="@ViewBag.UserId" hidden/>
+                    <textarea name="DanhGia" placeholder="Viết đánh giá của bạn..." rows="4" class="form-control"></textarea>
+                    <button type="submit" class="btn btn-primary mt-3">Gửi đánh giá</button>
+                </div>
+            </div>
+        </form>
+    </div>
+}
