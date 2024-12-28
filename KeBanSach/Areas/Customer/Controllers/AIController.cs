@@ -20,7 +20,7 @@ namespace KeBanSach.Areas.Customer.Controllers
         [HttpPost]
         public async Task<ActionResult> GenerateContent(string inputText)
         {
-            string apiKey = "AIzaSyBf0xyHSQW2A4Y2Tf6d-0R0GD_8XRz0WcE";
+            string apiKey = "YOUR API_KEY RIGHT HERE";
             var result = await _apiModel.GenerateContentAsync(apiKey, inputText);
             if (result != null)
             {
