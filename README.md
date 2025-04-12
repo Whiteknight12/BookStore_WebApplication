@@ -27,6 +27,7 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
   - User view: My orders
 - 🔍 **Search & Filter**
   - Search books by keyword, category
+  - Search by all time best seller, month best seller
 - 💬 **Comment system**
   - Users can comment on books
 - 🤖 **AI Chatbot Integration**
