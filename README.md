@@ -1,4 +1,4 @@
-**MVCBookStoreWebApp** – Trang web thương mại điện tử bán sách viết bằng ASP.NET Core MVC.
+**MVCBookStoreWebApp** – Trang web thương mại điện tử bán sách viết bằng ASP.NET Core MVC. Hầu hết ngôn ngữ sử dụng trong giao diện trang web là tiếng Việt (Vietnamese).
 
 ---
 
