@@ -30,6 +30,7 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
   - Search by all time best seller, month best seller
 - 💬 **Comment system**
   - Users can comment on books
+  - Change, delete comments if needed
 - 🤖 **AI Chatbot Integration**
   - Using Google AI Studio API (needs API key)
 - 📊 **Admin Dashboard**
@@ -45,6 +46,7 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
 - `SQL Server` / `LocalDB`
 - Razor views (`.cshtml`)
 - HTML/CSS/Bootstrap
+- JavaScript
 
 ---
 
