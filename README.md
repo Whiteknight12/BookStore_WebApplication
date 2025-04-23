@@ -44,9 +44,9 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
 - `Entity Framework Core`
 - `Microsoft Identity`
 - `SQL Server` / `LocalDB`
-- Razor views (`.cshtml`)
-- HTML/CSS/Bootstrap
-- JavaScript
+- `Razor views` (`.cshtml`)
+- `HTML/CSS/Bootstrap`
+- `JavaScript`
 
 ---
 
@@ -107,8 +107,7 @@ MVCBookStoreWebApp/
 ---
 
 ## 💡 Want to Buy?
-
-Contact me via my email: **nnguyenminhquang786@gmail.com**.  
+  
 You can contact the developer for:
 - Custom features
 - UI redesign
