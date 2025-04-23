@@ -108,9 +108,8 @@ MVCBookStoreWebApp/
 
 ## 💡 Want to Buy?
 
-This project is ready for **freelance resale or commercial use**.  
+Contact me via my email: **nnguyenminhquang786@gmail.com**.  
 You can contact the developer for:
-
 - Custom features
 - UI redesign
 - Deployment help
