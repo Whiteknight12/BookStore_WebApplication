@@ -7,7 +7,7 @@
 A fully functional eCommerce Book Store built with **ASP.NET Core MVC**.  
 Includes **user/admin roles**, **full CRUD**, **cart system**, **order management**, **search**, **comments**, and even an integrated **AI chatbot**.
 
-> Ideal for learning, adapting into real-world projects, or reselling to clients.
+> Ideal for learning.
 
 ---
 
