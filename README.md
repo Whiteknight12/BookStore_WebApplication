@@ -13,32 +13,32 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
 
 ### Features
 
-- 🔐 **User Authentication & Role Management**
+- **User Authentication & Role Management**
   - Register / Login / Logout
   - Separate dashboards for Admin and User
-- 📚 **Book Management (CRUD)**
+- **Book Management (CRUD)**
   - Add / Edit / Delete books
   - Category management
-- 🛒 **Shopping Cart**
+- **Shopping Cart**
   - Add to cart
   - Checkout with delivery details
-- 📦 **Order Management**
+- **Order Management**
   - Admin view: All orders
   - User view: My orders
-- 🔍 **Search & Filter**
+- **Search & Filter**
   - Search books by keyword, category
   - Search by all time best seller, month best seller
-- 💬 **Comment system**
+- **Comment system**
   - Users can comment on books
   - Change, delete comments if needed
-- 🤖 **AI Chatbot Integration**
+- **AI Chatbot Integration**
   - Using Google AI Studio API (needs API key)
-- 📊 **Admin Dashboard**
+- **Admin Dashboard**
   - Analytics, order overview, user management
 
 ---
 
-### 🧰 Tech Stack
+### Tech Stack
 
 - `ASP.NET Core MVC`
 - `Entity Framework Core`
@@ -50,13 +50,13 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
 
 ---
 
-### 📸 Screenshots
+### Screenshots
 
-> (Thêm hình ảnh chụp màn hình giao diện trang chủ, trang admin, trang giỏ hàng... tại đây nếu có)
+> (WIP)
 
 ---
 
-### ⚙️ Setup & Installation
+### Setup & Installation
 
 1. **Clone the repository:**
 
@@ -79,7 +79,7 @@ Includes **user/admin roles**, **full CRUD**, **cart system**, **order managemen
 
 ---
 
-### 📁 Folder Structure
+### Folder Structure
 
 ```
 MVCBookStoreWebApp/
@@ -95,18 +95,18 @@ MVCBookStoreWebApp/
 
 ### 📌 Live Demo (optional)
 
-> 👉 (You can deploy your site using [Render](https://render.com), [Azure], or [Vercel] and put demo link here)
+> (WIP)
 
 ---
 
-### ✉️ Contact
+### ✉Contact
 
-📧 For customization, questions or commercial inquiries:  
+For customization, questions or commercial inquiries:  
 **nnguyenminhquang786@gmail.com** 
 
 ---
 
-## 💡 Want to Buy?
+## Want to Buy?
   
 You can contact the developer for:
 - Custom features
