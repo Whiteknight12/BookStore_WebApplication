@@ -93,7 +93,7 @@ MVCBookStoreWebApp/
 
 ---
 
-### 📌 Live Demo (optional)
+### 📌 Live Demo 
 
 > (WIP)
 
