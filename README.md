@@ -7,7 +7,7 @@
 A fully functional eCommerce Book Store built with **ASP.NET Core MVC**.  
 Includes **user/admin roles**, **full CRUD**, **cart system**, **order management**, **search**, **comments**, and even an integrated **AI chatbot**.
 
-> Ideal for learning.
+> Ideal for learning. This is the very first web application I've ever made. Because of that, the architecture is not well built compared to modern web application structures. In addition, the codes are not optimized and clean, leading to difficulties for advanced studies.
 
 ---
 
